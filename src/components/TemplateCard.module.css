@@ -1,1 +1,80 @@
-/* TemplateCard styles */
+.card {
+  background: var(--color-surface);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.preview {
+  position: relative;
+  aspect-ratio: 260 / 180;
+  background-color: var(--color-bg);
+  overflow: hidden;
+}
+
+.previewImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.statusOverlay {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.variantBadge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: var(--color-accent);
+  color: white;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  padding: 2px 8px;
+  border-radius: var(--chip-radius);
+}
+
+.body {
+  padding: var(--space-md);
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+}
+
+.source {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.overflowCount {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  padding: 2px 6px;
+}

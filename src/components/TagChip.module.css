@@ -1,1 +1,30 @@
-/* TagChip styles */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: var(--chip-radius);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  border: none;
+  transition: background-color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.chip:hover {
+  filter: brightness(0.95);
+}
+
+.small {
+  padding: 2px 7px;
+  font-size: var(--font-size-xs);
+}
+
+.dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
