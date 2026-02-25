@@ -1,1 +1,194 @@
-/* TemplateDetail styles */
+.detail {
+  padding: var(--space-2xl);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+}
+
+.backButton {
+  padding: 8px 16px;
+  border-radius: var(--input-radius);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.backButton:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.name {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xl);
+}
+
+.layout {
+  display: flex;
+  gap: var(--space-3xl);
+}
+
+.preview {
+  width: 360px;
+  min-width: 360px;
+  background: var(--color-surface);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-preview);
+  overflow: hidden;
+}
+
+.previewImage {
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  flex: 1;
+}
+
+.sectionTitle {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.metadata {
+  margin-bottom: var(--space-2xl);
+}
+
+.metadataGrid {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 6px 16px;
+  font-size: var(--font-size-base);
+}
+
+.metadataGrid dt {
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+}
+
+.metadataGrid dd {
+  color: var(--color-text-primary);
+}
+
+.colorField {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tagsSection {
+  margin-bottom: var(--space-2xl);
+}
+
+.tagGroup {
+  margin-bottom: var(--space-md);
+}
+
+.tagGroupTitle {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-xs);
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.auditSection {
+  margin-bottom: var(--space-2xl);
+}
+
+.auditList {
+  list-style: none;
+  padding: 0;
+}
+
+.auditEntry {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 6px 0;
+  border-bottom: 1px solid var(--color-border-light);
+  font-size: var(--font-size-base);
+}
+
+.auditAction {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  min-width: 80px;
+}
+
+.auditBy {
+  color: var(--color-text-secondary);
+}
+
+.auditDate {
+  color: var(--color-text-muted);
+  margin-left: auto;
+  font-size: var(--font-size-sm);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.actionButton {
+  padding: 10px 24px;
+  border-radius: var(--input-radius);
+  background: var(--color-accent);
+  color: white;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-md);
+  cursor: pointer;
+  border: none;
+  transition: background-color var(--transition-fast);
+}
+
+.actionButton:hover {
+  background: #154360;
+}
+
+.actionButtonSecondary {
+  padding: 10px 24px;
+  border-radius: var(--input-radius);
+  background: var(--color-surface);
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-md);
+  cursor: pointer;
+  border: 1px solid var(--color-accent);
+  transition: all var(--transition-fast);
+}
+
+.actionButtonSecondary:hover {
+  background: var(--color-accent-light);
+}

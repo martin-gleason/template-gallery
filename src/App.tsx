@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import styles from './App.module.css';
 import { useTemplates } from './hooks/useTemplates';
 import FilterSidebar from './components/FilterSidebar';
 import GalleryGrid from './components/GalleryGrid';
 import EmptyState from './components/EmptyState';
+import TemplateDetail from './components/TemplateDetail';
 import type { Template } from './types';
 
 function App() {
@@ -19,8 +21,19 @@ function App() {
     clearFilters,
   } = useTemplates();
 
-  const handleSelect = (_t: Template) => {
-    // Will be implemented in Loop 13.3
+  const [selectedTemplate, setSelectedTemplate] = useState<Template | null>(null);
+
+  const handleSelect = (t: Template) => {
+    setSelectedTemplate(t);
+  };
+
+  const handleBack = () => {
+    setSelectedTemplate(null);
+  };
+
+  const handleDetailTagClick = (category: string, value: string) => {
+    toggleTag(category, value);
+    setSelectedTemplate(null);
   };
 
   if (loading) {
@@ -46,28 +59,37 @@ function App() {
         <span className={styles.subtitle}>CCJCPS Training Flyer Templates</span>
       </header>
 
-      <div className={styles.content}>
-        <FilterSidebar
+      {selectedTemplate ? (
+        <TemplateDetail
+          template={selectedTemplate}
           categories={categories}
-          tagCloud={tagCloud}
-          filters={filters}
-          onFilterChange={setFilters}
-          templateCount={filtered.length}
-          totalCount={templates.length}
+          onBack={handleBack}
+          onTagClick={handleDetailTagClick}
         />
+      ) : (
+        <div className={styles.content}>
+          <FilterSidebar
+            categories={categories}
+            tagCloud={tagCloud}
+            filters={filters}
+            onFilterChange={setFilters}
+            templateCount={filtered.length}
+            totalCount={templates.length}
+          />
 
-        <main className={styles.main}>
-          {filtered.length > 0 ? (
-            <GalleryGrid
-              templates={filtered}
-              onSelect={handleSelect}
-              onTagClick={toggleTag}
-            />
-          ) : (
-            <EmptyState onClearFilters={clearFilters} />
-          )}
-        </main>
-      </div>
+          <main className={styles.main}>
+            {filtered.length > 0 ? (
+              <GalleryGrid
+                templates={filtered}
+                onSelect={handleSelect}
+                onTagClick={toggleTag}
+              />
+            ) : (
+              <EmptyState onClearFilters={clearFilters} />
+            )}
+          </main>
+        </div>
+      )}
     </div>
   );
 }
