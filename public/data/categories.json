@@ -1,0 +1,56 @@
+[
+  {
+    "id": "program",
+    "name": "Program",
+    "is_controlled": true,
+    "requires_role": null,
+    "vocabulary": [
+      { "value": "ileps", "display_label": "ILEPS/CCP", "color": "#1e8449", "sort_order": 1, "is_active": true },
+      { "value": "cope", "display_label": "COPE", "color": "#2e86c1", "sort_order": 2, "is_active": true },
+      { "value": "c5", "display_label": "C5", "color": "#1a5276", "sort_order": 3, "is_active": true },
+      { "value": "wellness", "display_label": "Wellness", "color": "#148f77", "sort_order": 4, "is_active": true },
+      { "value": "leadership", "display_label": "Leadership", "color": "#1b2631", "sort_order": 5, "is_active": true },
+      { "value": "success-planning", "display_label": "Success Planning", "color": "#6c3483", "sort_order": 6, "is_active": true },
+      { "value": "data", "display_label": "Data", "color": "#566573", "sort_order": 7, "is_active": true },
+      { "value": "ppp", "display_label": "PPP", "color": "#d4ac0d", "sort_order": 8, "is_active": true },
+      { "value": "legal-framework", "display_label": "Legal Framework", "color": "#7d3c98", "sort_order": 9, "is_active": true }
+    ]
+  },
+  {
+    "id": "audience",
+    "name": "Audience",
+    "is_controlled": true,
+    "requires_role": null,
+    "vocabulary": [
+      { "value": "supervisors", "display_label": "Supervisors", "color": "#e67e22", "sort_order": 1, "is_active": true },
+      { "value": "line-staff", "display_label": "Line Staff", "color": "#3498db", "sort_order": 2, "is_active": true },
+      { "value": "new-hires", "display_label": "New Hires", "color": "#27ae60", "sort_order": 3, "is_active": true },
+      { "value": "all-staff", "display_label": "All Staff", "color": "#95a5a6", "sort_order": 4, "is_active": true }
+    ]
+  },
+  {
+    "id": "time-period",
+    "name": "Time Period",
+    "is_controlled": false,
+    "requires_role": null,
+    "vocabulary": []
+  },
+  {
+    "id": "compliance",
+    "name": "Compliance",
+    "is_controlled": true,
+    "requires_role": "approver",
+    "vocabulary": [
+      { "value": "aoic-required", "display_label": "AOIC Required", "color": "#c0392b", "sort_order": 1, "is_active": true },
+      { "value": "elective", "display_label": "Elective", "color": "#2ecc71", "sort_order": 2, "is_active": true },
+      { "value": "mandatory-annual", "display_label": "Mandatory Annual", "color": "#e67e22", "sort_order": 3, "is_active": true }
+    ]
+  },
+  {
+    "id": "custom",
+    "name": "Custom",
+    "is_controlled": false,
+    "requires_role": null,
+    "vocabulary": []
+  }
+]

@@ -1,0 +1,15 @@
+[
+  { "category": "program", "value": "ileps", "display_label": "ILEPS/CCP", "color": "#1e8449", "count": 4 },
+  { "category": "program", "value": "wellness", "display_label": "Wellness", "color": "#148f77", "count": 3 },
+  { "category": "program", "value": "c5", "display_label": "C5", "color": "#1a5276", "count": 2 },
+  { "category": "program", "value": "leadership", "display_label": "Leadership", "color": "#1b2631", "count": 1 },
+  { "category": "program", "value": "ppp", "display_label": "PPP", "color": "#d4ac0d", "count": 1 },
+  { "category": "program", "value": "legal-framework", "display_label": "Legal Framework", "color": "#7d3c98", "count": 1 },
+  { "category": "audience", "value": "supervisors", "display_label": "Supervisors", "color": "#e67e22", "count": 3 },
+  { "category": "audience", "value": "all-staff", "display_label": "All Staff", "color": "#95a5a6", "count": 4 },
+  { "category": "audience", "value": "line-staff", "display_label": "Line Staff", "color": "#3498db", "count": 4 },
+  { "category": "audience", "value": "new-hires", "display_label": "New Hires", "color": "#27ae60", "count": 2 },
+  { "category": "compliance", "value": "aoic-required", "display_label": "AOIC Required", "color": "#c0392b", "count": 4 },
+  { "category": "compliance", "value": "elective", "display_label": "Elective", "color": "#2ecc71", "count": 5 },
+  { "category": "compliance", "value": "mandatory-annual", "display_label": "Mandatory Annual", "color": "#e67e22", "count": 3 }
+]

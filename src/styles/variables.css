@@ -1,0 +1,65 @@
+:root {
+  /* Colors — Cook County professional palette */
+  --color-bg: #f5f6f7;
+  --color-surface: #ffffff;
+  --color-border: #e8e8e8;
+  --color-border-light: #f0f0f0;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #666666;
+  --color-text-muted: #999999;
+  --color-text-faint: #bbbbbb;
+  --color-accent: #1a5276;
+  --color-accent-light: #e8f0f7;
+  --color-header-bg: #1a2332;
+
+  /* Status colors */
+  --color-approved-bg: #e8f5e9;
+  --color-approved-text: #2e7d32;
+  --color-approved-border: #a5d6a7;
+  --color-draft-bg: #fff3e0;
+  --color-draft-text: #e65100;
+  --color-draft-border: #ffcc80;
+  --color-archived-bg: #f3e5f5;
+  --color-archived-text: #6a1b9a;
+  --color-archived-border: #ce93d8;
+
+  /* Typography */
+  --font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 13px;
+  --font-size-md: 14px;
+  --font-size-lg: 18px;
+  --font-size-xl: 22px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 20px;
+  --space-2xl: 24px;
+  --space-3xl: 32px;
+
+  /* Layout */
+  --sidebar-width: 260px;
+  --header-height: 72px;
+  --card-radius: 12px;
+  --chip-radius: 20px;
+  --input-radius: 8px;
+  --max-width: 1400px;
+
+  /* Shadows */
+  --shadow-card: 0 1px 4px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.1);
+  --shadow-panel: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --shadow-preview: 0 4px 16px rgba(0, 0, 0, 0.1);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.2s ease;
+}
