@@ -2,3 +2,52 @@
   min-height: 100vh;
   background-color: var(--color-bg);
 }
+
+.header {
+  height: var(--header-height);
+  background-color: var(--color-header-bg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: 0 var(--space-2xl);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: white;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.content {
+  display: flex;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.main {
+  flex: 1;
+  min-height: calc(100vh - var(--header-height));
+}
+
+.loading,
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+}
+
+.error {
+  color: #c0392b;
+}

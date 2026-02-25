@@ -1,4 +1,5 @@
 import type { FC } from 'react';
+import styles from './SearchBar.module.css';
 
 interface SearchBarProps {
   value: string;
@@ -6,8 +7,17 @@ interface SearchBarProps {
   placeholder?: string;
 }
 
-const SearchBar: FC<SearchBarProps> = () => {
-  return null;
+const SearchBar: FC<SearchBarProps> = ({ value, onChange, placeholder = 'Search templates...' }) => {
+  return (
+    <input
+      data-testid="filter-search"
+      type="text"
+      className={styles.input}
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
+      placeholder={placeholder}
+    />
+  );
 };
 
 export default SearchBar;
