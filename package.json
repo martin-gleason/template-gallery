@@ -13,7 +13,8 @@
     "test:coverage": "vitest run --coverage",
     "test:loop1": "vitest run test/components.test.tsx --reporter=verbose",
     "test:loop2": "vitest run test/gallery-filter.test.tsx --reporter=verbose",
-    "test:loop3": "vitest run test/detail-actions.test.tsx --reporter=verbose"
+    "test:loop3": "vitest run test/detail-actions.test.tsx --reporter=verbose",
+    "test:loop13a1": "vitest run test/shared-drive.test.ts --reporter=verbose"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.3.3",
