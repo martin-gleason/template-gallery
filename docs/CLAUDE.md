@@ -4,7 +4,7 @@
 **Organization:** Cook County Juvenile Court & Probation Services (CCJCPS)
 **Created:** February 25, 2026
 **Runtime:** TypeScript / React + Vite (client-side only)
-**Local Path:** `/Users/marty/Local_Dev_Projects/ocs-training-bot/template-gallery`
+**Local Path:** `OCS-Ecosystem/template-gallery` (citizen submodule of the workspace)
 **Companion Projects:** `flyer-template-system` (source data), `training-coordination-mcp` (MCP tools)
 
 ---
