@@ -65,3 +65,24 @@ export interface AuditEntry {
   by: string;
   date: string;
 }
+
+export interface ColorScheme {
+  category: string;
+  label: string;
+  primary: string;
+  wcagCompliant: boolean;
+}
+
+export interface GalleryData {
+  templates: Template[];
+  categories: CategoryWithVocabulary[];
+  tagCloud: TagCloudEntry[];
+  lastUpdated: string;
+  colorSchemes: ColorScheme[];
+}
+
+declare global {
+  interface Window {
+    GALLERY_DATA?: GalleryData;
+  }
+}
