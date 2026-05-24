@@ -16,6 +16,7 @@
     "test:loop3": "vitest run test/detail-actions.test.tsx --reporter=verbose"
   },
   "dependencies": {
+    "@fontsource/dm-sans": "^5.2.8",
     "@radix-ui/react-checkbox": "^1.3.3",
     "@radix-ui/react-dialog": "^1.1.15",
     "clsx": "^2.1.1",
