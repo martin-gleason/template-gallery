@@ -39,6 +39,14 @@ Template Gallery had no F-numbering at the time of its v1.0 ship. Per Phase 4c r
 
 Deployment note: Template Gallery ships on **Cloudflare Pages with Cloudflare Access** (6-user gate). This was corrected in the workspace README via the infrastructure-pass PR (#31); the previous "GitHub Pages" / "public" framing in older docs is stale.
 
+## Ecosystem Constructs: Milestones, Risks, Learning Budget
+
+Template Gallery participates in three ecosystem-level constructs defined in `OCS-Ecosystem/docs/conventions.md` (§1, §2, §8.2–8.3):
+
+- **Milestones (`M<N>`)** group features and chores toward dated targets, recorded in `OCS-Ecosystem/docs/milestones/milestones.md`. A milestone ID **never** appears in commit messages, branch names, or PR titles (LD-10) — those carry `F`/`C`/`T` only.
+- **Risks (`R<N>`)** affecting this citizen are tracked in `OCS-Ecosystem/docs/risk-register.md`. Mitigation ships here as an `F`/`C`; the risk links to it.
+- **Learning-budget mode (5% / 50%)** is declared in each spec's header and inherited by its milestone. Full-PR-review-before-merge is the floor in every mode.
+
 ## Internal spec
 
 The full project spec, test plan, and detailed implementation notes live at [`docs/CLAUDE.md`](docs/CLAUDE.md). That file is the source of truth for project-internal concerns (architecture, dependencies, test approach, deployment specifics). This root-level file is the ecosystem-facing view: lifecycle status, author, ecosystem orientation, and authorization model.
