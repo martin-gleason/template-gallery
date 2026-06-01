@@ -1,0 +1,12 @@
+{
+  // Cloudflare deploy config for template-gallery (static Vite site).
+  // The build pipeline runs `npm run build` (tsc -b && vite build) → ./dist,
+  // then `wrangler versions upload` uploads ./dist as static assets.
+  // NOTE: the Cloudflare project's BUILD COMMAND must be set to `npm run build`
+  // (dashboard side) so ./dist exists before upload.
+  "name": "template-gallery",
+  "compatibility_date": "2026-06-01",
+  "assets": {
+    "directory": "./dist"
+  }
+}
